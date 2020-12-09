@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5EC"
+    android:paddingVertical="10dp">
+
+    <TextView
+        android:id="@+id/tracking_text"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#FEC1C9"
+        android:elevation="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:outlineSpotShadowColor="#FE5B6E"
+        android:paddingVertical="30dp"
+        android:text="@string/track_your_order"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorAccent"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/order_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/order_text"
+        app:layout_constraintTop_toTopOf="@+id/tracking_icon" />
+
+    <TextView
+        android:id="@+id/order_text"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#FEC1C9"
+        android:elevation="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:outlineSpotShadowColor="#FE5B6E"
+        android:paddingVertical="30dp"
+        android:shadowColor="#FE5B6E"
+        android:text="@string/select_restaurant"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorAccent"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/account_icon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/food_icon"
+        app:layout_constraintTop_toTopOf="@+id/food_icon" />
+
+    <TextView
+        android:id="@+id/safety_text"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#FEC1C9"
+        android:elevation="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:outlineSpotShadowColor="#FE5B6E"
+        android:paddingVertical="20dp"
+        android:text="@string/read_safety_guidelines"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorAccent"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/tracking_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tracking_text"
+        app:layout_constraintTop_toTopOf="@+id/safety_icon" />
+
+    <ImageView
+        android:id="@+id/tracking_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#FEC1C9"
+        android:elevation="5dp"
+        android:outlineSpotShadowColor="#FE5B6E"
+        app:layout_constraintEnd_toEndOf="@+id/food_icon"
+        app:layout_constraintStart_toStartOf="@+id/food_icon"
+        app:layout_constraintTop_toBottomOf="@+id/food_icon"
+        app:srcCompat="@drawable/icons8_tracking_100" />
+
+    <ImageView
+        android:id="@+id/food_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="320dp"
+        android:background="#FEC1C9"
+        android:elevation="5dp"
+        android:outlineSpotShadowColor="#FE5B6E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/welcome_text_db"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text_db"
+        app:srcCompat="@drawable/order" />
+
+    <ImageView
+        android:id="@+id/safety_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#FEC1C9"
+        android:elevation="5dp"
+        android:outlineSpotShadowColor="#FE5B6E"
+        app:layout_constraintEnd_toEndOf="@+id/tracking_icon"
+        app:layout_constraintStart_toStartOf="@+id/tracking_icon"
+        app:layout_constraintTop_toBottomOf="@+id/tracking_icon"
+        app:srcCompat="@drawable/safetty" />
+
+    <TextView
+        android:id="@+id/welcome_text_db"
+        android:layout_width="214dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lobster"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#6200EA"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/account_icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/welcome_text_db"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/account" />
+
+    <TextView
+        android:id="@+id/account_text"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="@string/account"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/blueButton"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/account_icon"
+        app:layout_constraintStart_toStartOf="@+id/account_icon"
+        app:layout_constraintTop_toBottomOf="@+id/account_icon" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/lobster"
+        android:text="@string/to_mana"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/welcome_text_db"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="@+id/welcome_text_db"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

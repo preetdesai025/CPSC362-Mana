@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground">
+
+    <ImageView
+        android:id="@+id/mask_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/plan_image"
+        app:layout_constraintTop_toBottomOf="@+id/plan_image"
+        app:srcCompat="@drawable/safetty" />
+
+    <TextView
+        android:id="@+id/safety_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lobster"
+        android:text="@string/safety_guidelines"
+        android:textColor="@color/colorPrimary"
+        android:textSize="54sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/distance_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/mask_image"
+        app:layout_constraintTop_toBottomOf="@+id/mask_image"
+        app:srcCompat="@drawable/social_distance" />
+
+    <ImageView
+        android:id="@+id/sanitize_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/distance_image"
+        app:layout_constraintTop_toBottomOf="@+id/distance_image"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/wash_hands" />
+
+    <ImageView
+        android:id="@+id/plan_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/safety_title_text"
+        app:layout_constraintTop_toBottomOf="@+id/safety_title_text"
+        app:srcCompat="@drawable/plan_ahead" />
+
+    <TextView
+        android:id="@+id/plan_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/plan_ahead_by_making_a_reservation_and_utilizing_mobile_pay"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/plan_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plan_image"
+        app:layout_constraintTop_toTopOf="@+id/plan_image" />
+
+    <TextView
+        android:id="@+id/mask_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/customers_must_wear_a_mask_at_all_times_unless_eating_or_drinking"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mask_image"
+        app:layout_constraintEnd_toEndOf="@+id/plan_text"
+        app:layout_constraintStart_toEndOf="@+id/mask_image"
+        app:layout_constraintTop_toTopOf="@+id/mask_image" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/follow_social_distancing_protocols_at_least_6_feet_distance"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/distance_image"
+        app:layout_constraintEnd_toEndOf="@+id/mask_text"
+        app:layout_constraintStart_toEndOf="@+id/distance_image"
+        app:layout_constraintTop_toTopOf="@+id/distance_image" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/walk_in_with_clean_hands_by_utilizing_sanitation_stations"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sanitize_image"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/sanitize_image"
+        app:layout_constraintTop_toTopOf="@+id/sanitize_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

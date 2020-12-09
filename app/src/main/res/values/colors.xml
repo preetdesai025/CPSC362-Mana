@@ -2,5 +2,8 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#6200EA</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#FE5B6E</color>
+    <color name="appBackground">#FFF5EC</color>
+    <color name="colorSecondary">#FEC1C9</color>
+    <color name="blueButton">#5972E6</color>
 </resources>
