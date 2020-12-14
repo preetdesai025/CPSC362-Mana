@@ -17,4 +17,9 @@
     <string name="follow_social_distancing_protocols_at_least_6_feet_distance">Follow social distancing protocols, at least 6 feet distance.</string>
     <string name="walk_in_with_clean_hands_by_utilizing_sanitation_stations">Walk in with clean hands by utilizing sanitation stations.</string>
     <string name="plan_ahead_by_making_a_reservation_and_utilizing_mobile_pay">Plan ahead by making a reservation and utilizing mobile pay.</string>
+    <string name="log_out">Log out</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="name">Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
 </resources>

@@ -20,6 +20,8 @@
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".CustomerDashActivity"></activity>
         <activity android:name=".GuidelineActivity"></activity>
+        <activity android:name=".AccountActivity"></activity>
+        <activity android:name=".RestaurantActivity"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

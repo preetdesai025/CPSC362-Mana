@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground">
+
+    <EditText
+        android:id="@+id/account_fname_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorSecondary"
+        android:ems="10"
+        android:hint="@string/enter_first_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/account_title_text"
+        app:layout_constraintTop_toBottomOf="@+id/account_title_text" />
+
+    <TextView
+        android:id="@+id/account_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lobster"
+        android:text="@string/account"
+        android:textColor="@color/colorPrimary"
+        android:textSize="55sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:text="@string/log_out"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/save_profile_button"
+        app:layout_constraintStart_toStartOf="@+id/save_profile_button"
+        app:layout_constraintTop_toBottomOf="@+id/save_profile_button" />
+
+    <EditText
+        android:id="@+id/account_lname_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorSecondary"
+        android:ems="10"
+        android:hint="@string/enter_last_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/account_title_text"
+        app:layout_constraintTop_toBottomOf="@+id/account_fname_text" />
+
+    <EditText
+        android:id="@+id/account_phone_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorSecondary"
+        android:ems="10"
+        android:hint="@string/enter_your_phone_number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/account_lname_text"
+        app:layout_constraintStart_toStartOf="@+id/account_lname_text"
+        app:layout_constraintTop_toBottomOf="@+id/account_lname_text" />
+
+    <Button
+        android:id="@+id/save_profile_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:background="@color/colorPrimary"
+        android:text="Save Profile"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/account_phone_text"
+        app:layout_constraintStart_toStartOf="@+id/account_phone_text"
+        app:layout_constraintTop_toBottomOf="@+id/account_phone_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

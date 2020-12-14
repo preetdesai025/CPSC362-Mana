@@ -19,5 +19,15 @@ class CustomerDashActivity : AppCompatActivity () {
             val intent = Intent(this, GuidelineActivity::class.java)
             startActivity(intent)
         }
+
+        account_icon.setOnClickListener {
+            val intent = Intent(this, AccountActivity::class.java)
+            startActivity(intent)
+        }
+
+        selectRestaurant_text.setOnClickListener {
+            val intent = Intent(this, RestaurantActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
