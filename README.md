@@ -1,7 +1,15 @@
 # CPSC362-Mana
-Mobile application project to provide restaurant logistics
+Mobile application to provide restaurant logistics
+This application is written in Kotlin and made using Android Studio, API level 28.
+Firebase was used for Authentication services.
 
-Login Interface
-<p align="left">
-  <img src="https://github.com/preetdesai025/CPSC362-Mana/blob/master/InterfaceImages/Mana_login_prototype.png" width="300" title="hover text">
-</p>
+The UI features that are complete: Login, Registration, Dashboard, Account, Safety Guidelines
+
+In progress: Ability to view restaurants and place orders.
+
+Demo: https://youtu.be/fIZ0hNs0ER4
+
+
+
+
+
